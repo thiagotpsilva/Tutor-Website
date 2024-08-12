@@ -80,7 +80,7 @@ img {
 }
 
 .navbar.navbar-scroll {
-  background-color: rgba(235, 77, 85, 0.7);
+  background-color: rgba(235, 77, 85, 0.8);
   backdrop-filter: blur(10px);
 }
 
@@ -158,10 +158,60 @@ img {
   width: 100%;
   margin-right: -100px;
 }
+
+/* SECTION: LEARN */
+.topics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.topic-image {
+  transition: transform 0.3s;
+}
+
+.topic-image:hover {
+  transform: scale(1.1);
+}
+
+.topic h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* SECTION: CHAPTERS */
+.chapter-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem 0 4rem;
+}
+
+.chapter-cards img {
+  width: 130px;
+  margin-top: 1rem;
+}
+
+.chapter-cards h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
+  .topics {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 992px) {
+  .topics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chapter-cards {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 768px) {
   .main-menu-items {
@@ -176,4 +226,7 @@ img {
   }
 }
 @media (max-width: 576px) {
+  .topics {
+    grid-template-columns: 1fr;
+  }
 }
