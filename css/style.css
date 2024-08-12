@@ -38,7 +38,7 @@ img {
 
 /* NAVBAR */
 .navbar {
-  background-color: black;
+  background-color: transparent;
   color: white;
   padding: 1rem 2rem;
   position: fixed;
@@ -113,6 +113,45 @@ img {
   flex-direction: column;
   gap: 2rem;
   font-size: 1.2rem;
+}
+
+/* HERO */
+.hero {
+  background: #000 url('../images/header-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 11.5rem 2rem 8rem;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.hero .hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding-bottom: 8rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.hero img {
+  width: 100%;
+  margin-right: -100px;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {

@@ -10,3 +10,21 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 1.6rem 2.6rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 32px;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: #fff;
+}
