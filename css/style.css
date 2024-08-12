@@ -79,6 +79,11 @@ img {
   font-size: 1.5rem;
 }
 
+.navbar.navbar-scroll {
+  background-color: rgba(235, 77, 85, 0.7);
+  backdrop-filter: blur(10px);
+}
+
 /* MOBILE MENU */
 
 .mobile-menu {
