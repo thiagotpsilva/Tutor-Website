@@ -268,12 +268,30 @@ img {
   width: 50%;
 }
 
+/* SECTION: TAKEAWAYS */
+.takeaways-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.takeaways-cards .card {
+  flex-direction: row;
+  text-align: left;
+}
+
+.takeaways-cards .card i {
+  margin-right: 1rem;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
   .topics {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 992px) {
   .topics {
     grid-template-columns: repeat(2, 1fr);
@@ -281,7 +299,11 @@ img {
   .chapter-cards {
     grid-template-columns: 1fr;
   }
+  .takeaways-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
 @media (max-width: 768px) {
   .main-menu-items {
     display: none;
@@ -313,6 +335,7 @@ img {
     display: none;
   }
 }
+
 @media (max-width: 576px) {
   .topics {
     grid-template-columns: 1fr;
