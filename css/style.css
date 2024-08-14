@@ -285,6 +285,50 @@ img {
   margin-right: 1rem;
 }
 
+/* SECTION: DETAILS */
+.details .details-flex {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.details img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.details .heading-border {
+  margin: 0;
+}
+
+.details p {
+  margin: 1rem 0 2rem;
+}
+
+/* SECTION: AUTHOR */
+.details + .details .details-flex {
+  flex-direction: row-reverse;
+}
+
+.details ul {
+  margin-bottom: 2rem;
+}
+
+.details ul li {
+  line-height: 2;
+}
+
+.details i {
+  margin-right: 0.5rem;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
   .topics {
@@ -301,6 +345,15 @@ img {
   }
   .takeaways-cards {
     grid-template-columns: 1fr;
+  }
+
+  .details-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .details + .details .details-flex {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
